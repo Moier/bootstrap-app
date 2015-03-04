@@ -1,6 +1,7 @@
-$(document).ready(function(){
-	$(".modal").modal("show");
-});
+
+// $(document).ready(function(){
+// 	$(".modal").modal("show");
+// });
 
 
 function formsubmit(){
@@ -10,4 +11,20 @@ function formsubmit(){
 	var checkbox = $("#form-check").prop("checked");
 	var radio = $("input[name='inlineRadioOptions']:checked").val();
 	alert(email+" "+password+" "+file+" "+checkbox+" "+radio);
+}
+
+
+function changeValue(){
+
+	var width = $("#progressbarid").width();
+	var totalWidth = $(".progress").width();
+	var percentWidth = width / totalWidth * 100;
+
+	if(percentWidth + 10 <= 100){
+		percentWidth += 10;
+	}else{
+		percentWidth = 100;
+	}
+	 $("#progressbarid").css({"width":percentWidth+"%"});
+	 $("#progressbarid").html(percentWidth+"%");
 }

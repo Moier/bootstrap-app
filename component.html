@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta http-equiv=Content-Type content="text/html;charset=utf-8">
 	<title>Component app</title>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
 	<link rel="stylesheet" type="text/css" href="css/test.css">
@@ -51,7 +52,41 @@
 				<button type="button" class="btn btn-default">Search</button>
 			</span>
 		</div>
+		<button type="button" class="btn btn-primary">
+			Message<span class="badge">42</span>
+		</button>
 	</div>	
 	
+
+	<div class="container">
+		<div class="jumbotron">
+			<h1>Hello world</h1>
+			<p>Hello world is a very simple programing demo.You can use this to start you programing.</p>
+			<p><a class="btn btn-primary btn-lg" href="#" role="button">learn more</a></p>
+		</div>
+		<div class="alert alert-danger alert-deismissible" role="alert">
+			<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			<STRONG>Warning!</STRONG>Better check yourself,you are not looking so good.
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="progress">
+			<div id="progressbarid" onclick="changeValue()" class="progress-bar  progress-bar-striped active" role="progressbar" aria-valuenow="60" aria-varluemin="0" aria-valuemax="100" style="width: 30%;">
+				30%
+			</div>
+		</div>
+		<div class="media">
+			<div class="media-left">
+				<a href="#">
+					<img src="./pic/old_man.png">
+				</a>
+			</div>
+			<div class="media-body">
+				<h4 class="media-center">张老头</h4>
+				<p>张老头有一天走在了大街上，迎面走来一位火柴人，天气很热，火柴人说自己好热好热，于是就着火啦。</p>
+			</div>
+		</div>
+	</div>
 </body>
 </html>
